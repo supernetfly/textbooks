@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>印地语课文讲解：मीना का परिवार &amp; चंदा मामा दूर के</title>
+<style>
+  body {
+    font-family: "Noto Sans SC", "Noto Sans Devanagari", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.8;
+  }
+  .lesson-number {
+    text-align: center;
+    font-size: 1.1em;
+    color: #c0392b;
+    font-weight: bold;
+    margin: 40px 0 10px 0;
+    padding: 8px 0;
+    background: #fdf2f0;
+    border-radius: 6px;
+  }
+  .main-title {
+    text-align: center;
+    color: #c0392b;
+    font-size: 1.6em;
+    padding: 20px 0 5px 0;
+    border-bottom: 3px solid #c0392b;
+    margin-bottom: 10px;
+  }
+  .sub-title {
+    text-align: center;
+    color: #888;
+    font-size: 0.95em;
+    margin-bottom: 30px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #c0392b;
+    border-left: 4px solid #c0392b;
+    padding-left: 12px;
+    margin: 30px 0 15px 0;
+  }
+  .hindi-text {
+    font-size: 1.1em;
+    font-family: "Noto Sans Devanagari", "Nirmala UI", sans-serif;
+    background: #fffdf5;
+    border: 1px solid #e8dcc8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    line-height: 2.2;
+  }
+  .hindi-text p {
+    margin: 10px 0;
+  }
+  .hindi-text .story-title {
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  .translation-text {
+    background: #f0f8ff;
+    border: 1px solid #b8d4e8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0;
+  }
+  .translation-text p {
+    margin: 10px 0;
+  }
+  .translation-text .trans-title {
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: bold;
+  }
+  .para-pair {
+    margin: 16px 0;
+  }
+  .para-pair .hindi-text {
+    margin: 0 0 6px 0;
+  }
+  .para-pair .translation-text {
+    margin: 0;
+  }
+  .author-line {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+  }
+  .vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  .vocab-table th {
+    background: #c0392b;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: normal;
+  }
+  .vocab-table td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+  }
+  .vocab-table tr:nth-child(even) {
+    background: #fdf2f0;
+  }
+  .vocab-note {
+    font-size: 0.9em;
+    color: #888;
+    margin: 5px 0 15px 0;
+    text-align: right;
+  }
+  .grammar-point {
+    background: #f5f0eb;
+    border-left: 3px solid #e67e22;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 12px 0;
+  }
+  .grammar-point .point-name {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 1.05em;
+  }
+  .grammar-point .point-desc {
+    margin: 6px 0;
+  }
+  .grammar-example {
+    font-family: "Noto Sans Devanagari", "Nirmala UI", sans-serif;
+    margin: 6px 0;
+    padding: 4px 0;
+  }
+  .grammar-example .trans {
+    color: #666;
+    font-size: 0.95em;
+    font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  }
+  .background-box {
+    background: #eaf7ea;
+    border: 1px solid #a3d9a3;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0;
+  }
+  .background-box p {
+    margin: 8px 0;
+  }
+  .note {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #856404;
+  }
+  .poem-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #8e44ad;
+    margin: 10px 0;
+  }
+  .poem-hindi {
+    font-family: "Noto Sans Devanagari", "Nirmala UI", sans-serif;
+    background: #f8f0ff;
+    border: 1px solid #d8c8e8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    line-height: 2;
+    text-align: center;
+  }
+  .poem-hindi p {
+    margin: 5px 0;
+  }
+  .poem-trans {
+    background: #f0f8ff;
+    border: 1px solid #b8d4e8;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .lesson-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #c0392b, transparent);
+    margin: 50px 0;
+  }
+  @media (max-width: 600px) {
+    body { padding: 12px; }
+    .vocab-table { font-size: 0.85em; }
+    .vocab-table th, .vocab-table td { padding: 5px 6px; }
+  }
+</style>
+</head>
+<body>
+
+<h1 class="main-title">印地语课文讲解</h1>
+<p class="sub-title">来源：NCERT Class 1 Hindi · 共两篇课文</p>
+
+<!-- ================================================================ -->
+<!-- 课文一：मीना का परिवार -->
+<!-- ================================================================ -->
+<div class="lesson-number">课文一</div>
+
+<!-- 一、印地语原文 -->
+<div class="section-title">一、印地语原文 <span style="font-weight:normal;font-size:0.7em;color:#666;">(मूल पाठ)</span></div>
+
+<div class="hindi-text">
+  <p class="story-title">मीना का परिवार</p>
+  <p>मीना के परिवार में सात लोग हैं — उसके दादा, दादी, माता, पिता, चाचा, मीना और उसका छोटा भाई दिवाकर। दिवाकर तीन साल का है। वह बहुत नटखट और चुलबुला है।</p>
+  <p>मीना को अपने भाई के साथ खेलने में बहुत आनंद आता है। दिवाकर भागकर कमरे के किवाड़ के पीछे छिप जाता है। मीना उसे ढूँढ़ लेती है तो वह ज़ोर-ज़ोर से हँसता है।</p>
+  <p>मीना उसे गिनती सिखाती है। दिवाकर कहता है, "एक, दो, तीन, चार" तो मीना कहती है, "चाचाजी हमको करते प्यार।"</p>
+  <p>तभी चाचाजी आ जाते हैं और दिवाकर को गोद में उठा लेते हैं।</p>
+  <p>मीना, चाचाजी और दिवाकर बरामदे में जाते हैं जहाँ दादी और माँ फल काट रही हैं। मीना के पिता और दादाजी गमलों में पानी दे रहे हैं।</p>
+  <p>थोड़ी देर में माँ सबको फल देती हैं। सब लोग मिल-जुल कर खुशी से फल खाते हैं और आपस में बातें करते जाते हैं। कितना प्यार भरा है मीना का परिवार!</p>
+  <p class="author-line">— मालती देवी</p>
+</div>
+
+<!-- 二、中文翻译 -->
+<div class="section-title">二、中文翻译 <span style="font-weight:normal;font-size:0.7em;color:#666;">(अनुवाद)</span></div>
+
+<div class="translation-text">
+  <p class="trans-title">米娜的一家</p>
+  <p>米娜家有七口人——她的爷爷、奶奶、妈妈、爸爸、叔叔、米娜和她的小弟弟迪瓦卡尔。迪瓦卡尔三岁了。他非常调皮又活泼。</p>
+  <p>米娜很喜欢和弟弟一起玩。迪瓦卡尔跑过去躲到房间的门后面。米娜找到他的时候，他就哈哈大笑。</p>
+  <p>米娜教他数数。迪瓦卡尔说："一、二、三、四"，米娜就说："叔叔多爱我们呀。"</p>
+  <p>就在这时叔叔来了，把迪瓦卡尔抱在怀里。</p>
+  <p>米娜、叔叔和迪瓦卡尔走到走廊上，奶奶和妈妈正在那里切水果。米娜的爸爸和爷爷正在给花盆浇水。</p>
+  <p>过了一会儿，妈妈给大家分水果。大家在一起开心地吃着水果，互相聊着天。米娜的家充满了多少爱呀！</p>
+  <p class="author-line">—— 马尔蒂·德维</p>
+</div>
+
+<!-- 三、重点单词和词组 -->
+<div class="section-title">三、重点单词和词组 <span style="font-weight:normal;font-size:0.7em;color:#666;">(शब्दावली)</span></div>
+
+<table class="vocab-table">
+  <thead>
+    <tr>
+      <th style="width:26%;">印地语</th>
+      <th style="width:22%;">读音</th>
+      <th style="width:10%;">词性</th>
+      <th style="width:42%;">中文含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>परिवार</td><td>parivār</td><td>n.(m.)</td><td>家庭</td></tr>
+    <tr><td>दादा</td><td>dādā</td><td>n.(m.)</td><td>爷爷</td></tr>
+    <tr><td>दादी</td><td>dādī</td><td>n.(f.)</td><td>奶奶</td></tr>
+    <tr><td>माता</td><td>mātā</td><td>n.(f.)</td><td>母亲</td></tr>
+    <tr><td>पिता</td><td>pitā</td><td>n.(m.)</td><td>父亲</td></tr>
+    <tr><td>चाचा</td><td>cācā</td><td>n.(m.)</td><td>叔叔（父亲的弟弟）</td></tr>
+    <tr><td>भाई</td><td>bhāī</td><td>n.(m.)</td><td>兄弟</td></tr>
+    <tr><td>छोटा</td><td>choṭā</td><td>adj.</td><td>小的、年幼的</td></tr>
+    <tr><td>नटखट</td><td>naṭkhaṭ</td><td>adj.</td><td>淘气的、顽皮的</td></tr>
+    <tr><td>चुलबुला</td><td>culbulā</td><td>adj.</td><td>活泼好动的</td></tr>
+    <tr><td>आनंद</td><td>ānand</td><td>n.(m.)</td><td>快乐、喜悦</td></tr>
+    <tr><td>खेलना</td><td>khelnā</td><td>vi.</td><td>玩、玩耍</td></tr>
+    <tr><td>भागना</td><td>bhāgnā</td><td>vi.</td><td>跑、奔跑</td></tr>
+    <tr><td>कमरा</td><td>kamrā</td><td>n.(m.)</td><td>房间</td></tr>
+    <tr><td>किवाड़</td><td>kivāṛ</td><td>n.(m.)</td><td>门扇、门板</td></tr>
+    <tr><td>पीछे</td><td>pīche</td><td>postp.</td><td>后面、背后</td></tr>
+    <tr><td>छिपना</td><td>chipnā</td><td>vi.</td><td>躲藏、藏起来</td></tr>
+    <tr><td>ढूँढ़ना</td><td>ḍhūṃḍhnā</td><td>vt.</td><td>寻找</td></tr>
+    <tr><td>ज़ोर-ज़ोर से</td><td>zor-zor se</td><td>phr.</td><td>大声地、使劲地</td></tr>
+    <tr><td>हँसना</td><td>haṃsnā</td><td>vi.</td><td>笑</td></tr>
+    <tr><td>गिनती</td><td>gintī</td><td>n.(f.)</td><td>数数、计数</td></tr>
+    <tr><td>सिखाना</td><td>sikhānā</td><td>vt.</td><td>教、教导</td></tr>
+    <tr><td>प्यार</td><td>pyār</td><td>n.(m.)</td><td>爱、喜爱</td></tr>
+    <tr><td>गोद</td><td>god</td><td>n.(f.)</td><td>怀抱、膝上</td></tr>
+    <tr><td>उठा लेना</td><td>uṭhā lenā</td><td>phr.</td><td>抱起来、举起来</td></tr>
+    <tr><td>बरामदा</td><td>barāmdā</td><td>n.(m.)</td><td>走廊、阳台</td></tr>
+    <tr><td>फल</td><td>phal</td><td>n.(m.)</td><td>水果</td></tr>
+    <tr><td>काटना</td><td>kāṭnā</td><td>vt.</td><td>切、割</td></tr>
+    <tr><td>गमला</td><td>gamlā</td><td>n.(m.)</td><td>花盆</td></tr>
+    <tr><td>पानी देना</td><td>pānī denā</td><td>phr.</td><td>浇水</td></tr>
+    <tr><td>थोड़ी देर में</td><td>thoṛī der men</td><td>phr.</td><td>过了一会儿</td></tr>
+    <tr><td>मिल-जुल कर</td><td>mil-jul kar</td><td>phr.</td><td>一起、和睦地</td></tr>
+    <tr><td>खुशी</td><td>khuśī</td><td>n.(f.)</td><td>高兴、幸福</td></tr>
+    <tr><td>आपस में</td><td>āpas men</td><td>phr.</td><td>互相、彼此之间</td></tr>
+    <tr><td>बातें करना</td><td>bāteṃ karnā</td><td>phr.</td><td>谈话、聊天</td></tr>
+    <tr><td>भरा</td><td>bharā</td><td>adj.</td><td>充满的、满的</td></tr>
+  </tbody>
+</table>
+<p class="vocab-note">n.(m.)=名词阳性 · n.(f.)=名词阴性 · vt.=及物动词 · vi.=不及物动词 · adj.=形容词 · postp.=后置词 · pron.=代词 · phr.=词组</p>
+
+<!-- 四、重点语法讲解 -->
+<div class="section-title">四、重点语法讲解 <span style="font-weight:normal;font-size:0.7em;color:#666;">(व्याकरण)</span></div>
+
+<div class="grammar-point">
+  <div class="point-name">1. 动词 "होना"（是/存在）的现在时变位</div>
+  <div class="point-desc">होना 是印地语中最基本、最常用的 vi.，表示"是"、"存在"或"有"。其现在时变位规则根据主语的人称和数而变化。</div>
+  <div class="grammar-example">मैं <strong>हूँ</strong>। <span class="trans">→ 我是。</span></div>
+  <div class="grammar-example">तू <strong>है</strong>। <span class="trans">→ 您是。（亲密/非正式）</span></div>
+  <div class="grammar-example">यह / वह <strong>है</strong>। <span class="trans">→ 他/她/它是。</span></div>
+  <div class="grammar-example">हम <strong>हैं</strong>। <span class="trans">→ 我们是。</span></div>
+  <div class="grammar-example">आप <strong>हैं</strong>। <span class="trans">→ 您是。（礼貌）</span></div>
+  <div class="grammar-example">ये / वे <strong>हैं</strong>। <span class="trans">→ 他们/她们/它们是。</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">课文例句：दिवाकर तीन साल का <strong>है</strong>。（迪瓦卡尔三岁了。）<br>课文例句：मीना के परिवार में सात लोग <strong>हैं</strong>。（米娜家有七口人。）</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">2. 后置词 (Postpositions)</div>
+  <div class="point-desc">印地语使用后置词（放在名词/代词之后）来表达格关系，类似于英语的介词但位置相反。课文中的常见后置词：</div>
+  <div class="grammar-example"><strong>के</strong> परिवार <strong>में</strong> <span class="trans">→ 在……的家庭中（के 属格 · में "在……里"）</span></div>
+  <div class="grammar-example">कमरे <strong>के</strong> किवाड़ <strong>के पीछे</strong> <span class="trans">→ 在房间的门后面（के पीछे 复合后置词，"在……后面"）</span></div>
+  <div class="grammar-example">भाई <strong>के साथ</strong> <span class="trans">→ 和弟弟一起（के साथ "和……一起"）</span></div>
+  <div class="grammar-example">गोद <strong>में</strong> <span class="trans">→ 在怀里（में "在……里"）</span></div>
+  <div class="grammar-example">खुशी <strong>से</strong> <span class="trans">→ 高兴地（से 表示方式/工具，构成副词）</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 后置词会引起前面名词/代词发生变格（斜格形式），是印地语语法的基础。</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">3. 现在进行时 (Present Continuous)</div>
+  <div class="point-desc">印地语的现在进行时由"动词词干 + रहा/रही/रहे" + होना 的现在时变位构成。रहा 用于阳性单数主语，रही 用于阴性单数主语，रहे 用于复数主语（不分性）。</div>
+  <div class="grammar-example">दादी और माँ फल काट <strong>रही हैं</strong>। <span class="trans">→ 奶奶和妈妈正在切水果。</span></div>
+  <div class="grammar-example">पिता और दादाजी गमलों में पानी दे <strong>रहे हैं</strong>। <span class="trans">→ 爸爸和爷爷正在给花盆浇水。</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 काट रही हैं（主语女性复数 → रही）vs दे रहे हैं（主语男性复数 → रहे）。</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">4. 复合动词 (Compound Verbs)</div>
+  <div class="point-desc">印地语中常用"动词词干 + 辅助动词"构成复合动词，表达更丰富的动作含义。辅助动词赋予主要动词特定的语义色彩。</div>
+  <div class="grammar-example">भागकर किवाड़ के पीछे छिप <strong>जाता है</strong>। <span class="trans">→ 跑过去躲到门后面。（जाना 表示动作的完成/转变）</span></div>
+  <div class="grammar-example">दिवाकर को गोद में उठा <strong>लेते हैं</strong>। <span class="trans">→ 把迪瓦卡尔抱在怀里。（लेना 表示动作为主语而做）</span></div>
+  <div class="grammar-example">मीना उसे ढूँढ़ <strong>लेती है</strong>। <span class="trans">→ 米娜找到了他。（लेना 表示动作的完成）</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 复合动词能表达非常细微的语义差别，是印地语的一大特色。</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">5. 形容词与名词的性数一致</div>
+  <div class="point-desc">印地语中，以 -ा 结尾的形容词会随所修饰名词的性和数发生变化。-ा 形修饰阳性单数，-ी 形修饰阴性单数，-े 形修饰阳性复数。</div>
+  <div class="grammar-example"><strong>छोटा</strong> भाई <span class="trans">→ 小弟弟（阳性单数 → छोटा）</span></div>
+  <div class="grammar-example"><strong>छोटी</strong> बहन <span class="trans">→ 小妹妹（阴性单数 → छोटी）</span></div>
+  <div class="grammar-example"><strong>बड़े</strong> भाई <span class="trans">→ 哥哥们（阳性复数 → बड़े）</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 नटखट 和 चुलबुला 是不以 -ा 结尾的形容词，保持不变格。</div>
+</div>
+
+<!-- 五、背景知识 -->
+<div class="section-title">五、背景知识 <span style="font-weight:normal;font-size:0.7em;color:#666;">(पृष्ठभूमि)</span></div>
+
+<div class="background-box">
+  <p><strong>1. 印度联合家庭制度 (संयुक्त परिवार)</strong></p>
+  <p>课文中的米娜一家是典型的印度<b>联合家庭（संयुक्त परिवार）</b>——祖父母、父母、叔叔、孩子同住一个屋檐下。在印度传统文化中，联合家庭是主流家庭模式，家庭成员共同生活、互相照顾。虽然现代城市中核心家庭越来越多，但联合家庭仍然是印度社会的重要特征。</p>
+  <p>印度家庭中的亲属称谓非常丰富，如：चाचा = 父亲的弟弟（叔叔）、मामा = 母亲的兄弟（舅舅）、ताऊ = 父亲的哥哥（伯父）、नाना / नानी = 外公 / 外婆。</p>
+
+  <p style="margin-top:15px;"><strong>2. "चाचाजी हमको करते प्यार"—— 亲属称谓儿歌</strong></p>
+  <p>课文中米娜教弟弟数数时说的"एक, दो, तीन, चार, चाचाजी हमको करते प्यार"（一、二、三、四，叔叔多爱我们呀），实际上是印度广为流传的童谣中的一句。类似的变体还有很多，如将"चाचाजी"替换为"दादाजी"、"नानाजी"、"मामाजी"等，用来帮助孩子认识家庭成员。</p>
+
+  <p style="margin-top:15px;"><strong>3. 课文来源与作者</strong></p>
+  <p>本文选自印度 NCERT（国家教育研究与培训委员会）出版的 Class 1 印地语教材，作者 मालती देवी（马尔蒂·德维）。NCERT 是印度政府下属的最权威教育机构，其教材在全印度广泛使用。本课面向一年级（约6-7岁）学生，属于印地语启蒙阶段课文。</p>
+
+  <p style="margin-top:15px;"><strong>4. 敬语后缀 -जी</strong></p>
+  <p>课文中使用"चाचाजी"、"दादाजी"等称呼，其中"-जी"（ji）是印地语中表示尊敬的敬语后缀，类似于中文的"您"或"先生/女士"，加在称呼后表示礼貌和尊重。这是印地语乃至整个印度次大陆语言文化中非常普遍的用法。</p>
+</div>
+
+<!-- ================================================================ -->
+<!-- 分隔线 -->
+<!-- ================================================================ -->
+<hr class="lesson-divider">
+
+<!-- ================================================================ -->
+<!-- 课文二：चंदा मामा दूर के -->
+<!-- ================================================================ -->
+<div class="lesson-number">课文二</div>
+
+<!-- 一、印地语原文 -->
+<div class="section-title">一、印地语原文 <span style="font-weight:normal;font-size:0.7em;color:#666;">(मूल पाठ)</span></div>
+
+<div class="hindi-text">
+  <p class="story-title">चंदा मामा दूर के</p>
+  <div style="text-align:center;line-height:2.2;">
+    <p>चंदा मामा दूर के,</p>
+    <p>पुए पकाएँ बूर के;</p>
+    <p>आप खाएँ थाली में,</p>
+    <p>मुन्ने को दें प्याली में।</p>
+    <p>प्याली गई टूट,</p>
+    <p>मुन्ना गया रूठ।</p>
+    <p>लाएँगे नई प्यालियाँ,</p>
+    <p>बजा-बजा के तालियाँ,</p>
+    <p>मुन्ने को मनाएँगे,</p>
+    <p>हम दूध-मलाई खाएँगे।</p>
+  </div>
+  <p class="author-line">साभार – एकलव्य</p>
+</div>
+
+<!-- 二、中文翻译 -->
+<div class="section-title">二、中文翻译 <span style="font-weight:normal;font-size:0.7em;color:#666;">(अनुवाद)</span></div>
+
+<div class="translation-text">
+  <p class="trans-title">月亮叔叔在远方</p>
+  <div style="text-align:center;line-height:2;">
+    <p>月亮叔叔在远方，</p>
+    <p>油炸糖饼做得香；</p>
+    <p>自己用大盘子吃，</p>
+    <p>给小宝宝小杯装。</p>
+    <p>小杯子呀摔碎了，</p>
+    <p>小宝宝呀生气了。</p>
+    <p>去拿新的小杯子，</p>
+    <p>拍手唱歌哄孩子，</p>
+    <p>哄好宝宝开心了，</p>
+    <p>我们一起吃奶糕。</p>
+  </div>
+</div>
+
+<!-- 三、重点单词和词组 -->
+<div class="section-title">三、重点单词和词组 <span style="font-weight:normal;font-size:0.7em;color:#666;">(शब्दावली)</span></div>
+
+<table class="vocab-table">
+  <thead>
+    <tr>
+      <th style="width:26%;">印地语</th>
+      <th style="width:22%;">读音</th>
+      <th style="width:10%;">词性</th>
+      <th style="width:42%;">中文含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>चंदा</td><td>candā</td><td>n.(m.)</td><td>月亮（昵称）</td></tr>
+    <tr><td>मामा</td><td>māmā</td><td>n.(m.)</td><td>舅舅</td></tr>
+    <tr><td>दूर</td><td>dūr</td><td>adv.</td><td>远、在远方</td></tr>
+    <tr><td>पुए</td><td>pue</td><td>n.(m.pl.)</td><td>油炸糖饼（一种印度甜点）</td></tr>
+    <tr><td>पकाना</td><td>pakānā</td><td>vt.</td><td>烹饪、做（饭）</td></tr>
+    <tr><td>बूर</td><td>būr</td><td>n.(m.)</td><td>糖粉、甜味碎屑</td></tr>
+    <tr><td>खाना</td><td>khānā</td><td>vt.</td><td>吃</td></tr>
+    <tr><td>थाली</td><td>thālī</td><td>n.(f.)</td><td>盘子、餐盘</td></tr>
+    <tr><td>मुन्ना</td><td>munnā</td><td>n.(m.)</td><td>小宝宝（对小孩的爱称）</td></tr>
+    <tr><td>देना</td><td>denā</td><td>vt.</td><td>给</td></tr>
+    <tr><td>प्याली</td><td>pyālī</td><td>n.(f.)</td><td>小杯子</td></tr>
+    <tr><td>टूटना</td><td>ṭūṭnā</td><td>vi.</td><td>破碎、摔碎</td></tr>
+    <tr><td>रूठना</td><td>rūṭhnā</td><td>vi.</td><td>生气、赌气</td></tr>
+    <tr><td>लाना</td><td>lānā</td><td>vt.</td><td>带来</td></tr>
+    <tr><td>नया</td><td>nayā</td><td>adj.</td><td>新的</td></tr>
+    <tr><td>बजाना</td><td>bajānā</td><td>vt.</td><td>敲打、拍（手）</td></tr>
+    <tr><td>ताली</td><td>tālī</td><td>n.(f.)</td><td>拍手、掌声</td></tr>
+    <tr><td>मनाना</td><td>manānā</td><td>vt.</td><td>哄、安抚</td></tr>
+    <tr><td>दूध</td><td>dūdh</td><td>n.(m.)</td><td>牛奶</td></tr>
+    <tr><td>मलाई</td><td>malāī</td><td>n.(f.)</td><td>奶皮、奶油</td></tr>
+    <tr><td>दूध-मलाई</td><td>dūdh-malāī</td><td>n.(f.)</td><td>牛奶奶糕（甜品）</td></tr>
+  </tbody>
+</table>
+<p class="vocab-note">n.(m.)=名词阳性 · n.(f.)=名词阴性 · vt.=及物动词 · vi.=不及物动词 · adj.=形容词 · adv.=副词 · phr.=词组</p>
+
+<!-- 四、重点语法讲解 -->
+<div class="section-title">四、重点语法讲解 <span style="font-weight:normal;font-size:0.7em;color:#666;">(व्याकरण)</span></div>
+
+<div class="grammar-point">
+  <div class="point-name">1. 动词将来时 (Future Tense)</div>
+  <div class="point-desc">这首童谣中使用了几种将来时形式。印地语中，将来时通过在动词词干后加 -एँगे / -एगा / -एगी 等后缀构成。第一人称复数将来时后缀为 -एँगे。</div>
+  <div class="grammar-example">लाएँगे नई प्यालियाँ <span class="trans">→ 我们将带来新杯子。（लाना 的将来时第一人称复数）</span></div>
+  <div class="grammar-example">हम दूध-मलाई खाएँगे <span class="trans">→ 我们将吃牛奶奶糕。（खाना 的将来时第一人称复数）</span></div>
+  <div class="grammar-example">मुन्ने को मनाएँगे <span class="trans">→ 我们将哄小宝宝。（मनाना 的将来时第一人称复数）</span></div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">2. 动词的祈愿/假设语气 (Subjunctive / Optative)</div>
+  <div class="point-desc">童谣前四行使用了动词的祈愿/假设形式（-एँ），表示"让我们……"或表达愿望，而非陈述事实。</div>
+  <div class="grammar-example">पुए पकाएँ बूर के <span class="trans">→ （让我们）做糖粉油炸饼。</span></div>
+  <div class="grammar-example">आप खाएँ थाली में <span class="trans">→ （让）您自己用盘子吃。</span></div>
+  <div class="grammar-example">मुन्ने को दें प्याली में <span class="trans">→ （让）我们给小宝宝用小杯子。</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 -एँ 结尾是印地语中复数/敬称祈愿语气的标志，与将来时 -एँगे 的区别在于是否带 -गे 后缀。</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">3. 过去时与完成体 (Past / Perfective)</div>
+  <div class="point-desc">童谣中间两句使用了过去时（गई / गया），表示已发生的动作。"गई"是 जाना（去）的阴性单数过去时，"गया"是阳性单数过去时。</div>
+  <div class="grammar-example">प्याली गई टूट <span class="trans">→ 杯子碎了。（गई 阴性单数过去时）</span></div>
+  <div class="grammar-example">मुन्ना गया रूठ <span class="trans">→ 小宝宝生气了。（गया 阳性单数过去时）</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 गई 和 गया 都来自 जाना（去/成为），此处作为辅助动词表示状态的转变。</div>
+</div>
+
+<div class="grammar-point">
+  <div class="point-name">4. 重复结构 (Reduplication) 增强表现力</div>
+  <div class="point-desc">印地语常使用重复词来增强表现力，表示动作的持续、反复或强调。童谣中使用了"बजा-बजा के"这种重复结构。</div>
+  <div class="grammar-example">बजा-बजा के तालियाँ <span class="trans">→ 不停地拍手 / 拍着手（重复 बजाना 的词干，表示动作持续或反复）</span></div>
+  <div class="point-desc" style="margin-top:8px;color:#666;font-size:0.9em;">💡 类似的重复结构还有：खाते-खाते（吃着吃着）、दौड़ते-दौड़ते（跑着跑着）、बोलते-बोलते（说着说着）。</div>
+</div>
+
+<!-- 五、背景知识 -->
+<div class="section-title">五、背景知识 <span style="font-weight:normal;font-size:0.7em;color:#666;">(पृष्ठभूमि)</span></div>
+
+<div class="background-box">
+  <p><strong>1. 关于这首童谣</strong></p>
+  <p>"चंदा मामा दूर के"（月亮舅舅在远方）是印度家喻户晓的经典童谣，类似于中文的"月亮船"或"小白兔"。该童谣使用了丰富的<b>押韵</b>（如 के / के; में / में; टूट / रूठ; प्यालियाँ / तालियाँ / मनाएँगे / खाएँगे）和<b>重复</b>手法，节奏欢快，适合儿童朗诵和记忆。</p>
+
+  <p style="margin-top:15px;"><strong>2. "चंदा मामा"——月亮舅舅</strong></p>
+  <p>童谣中称月亮为"चंदा मामा"（月亮舅舅），这是印度文化中月亮人格化的亲切称呼。मामा 是"母亲的兄弟"（舅舅），将月亮称为舅舅，体现了印度文化将自然事物拟人化并与家庭关系联结的传统。在印度，大人常指着月亮对孩子说"看，月亮舅舅来了"。</p>
+
+  <p style="margin-top:15px;"><strong>3. 童谣中的印度传统甜点</strong></p>
+  <p>"पुए"（pue）是一种印度传统油炸甜点，用面粉（通常是小麦粉或米粉）、糖和酥油（ clarified butter）制成，有时还会加入茴香或豆蔻调味。常在印度教节日如洒红节（Holi）或排灯节（Diwali）时制作和食用。"दूध-मलाई"（牛奶-奶皮）是印度常见的甜品组合，将牛奶慢煮后表面凝结的奶皮收集起来，加入糖调味，口感浓郁香甜。</p>
+
+  <p style="margin-top:15px;"><strong>4. 版权来源</strong></p>
+  <p>本童谣经"एकलव्य"（Eklavya）教育基金会许可使用（साभार – एकलव्य）。Eklavya 是印度知名的非营利教育出版机构，致力于为印度农村和边远地区提供优质教育资源和教材。</p>
+</div>
+
+</body>
+</html>
