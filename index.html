@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hindi Textbooks</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f0e8;
+      color: #2c1810;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+      color: #8b1a1a;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .grades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grade-block {
+      background: #fff;
+      border: 2px solid #d4a853;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .grade-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #8b1a1a;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #f0d89a;
+      text-align: center;
+    }
+
+    .pages-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: flex-start;
+    }
+
+    .page-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f5e6c8;
+      border: 2px solid #d4a853;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #5a2d0c;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .page-circle:hover {
+      background: #d4a853;
+      color: #fff;
+      transform: scale(1.12);
+      box-shadow: 0 3px 10px rgba(212,168,83,0.5);
+      text-decoration: none;
+    }
+
+    .no-pages {
+      font-size: 0.85rem;
+      color: #aaa;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hindi Textbooks</h1>
+<p class="subtitle">हिंदी पाठ्यपुस्तकें — Select a grade and lesson</p>
+
+<div class="grades-grid" id="gradesGrid"></div>
+
+<script>
+  // ── Page counts per grade ──────────────────────────────────────────────────
+  // Update the count for each grade as content becomes available.
+  // Set to 0 to show the grade block as "coming soon".
+  const GRADE_PAGES = [
+    19,  // Grade  1
+    26,  // Grade  2
+    0,   // Grade  3  — update when ready
+    0,   // Grade  4  — update when ready
+    0,   // Grade  5  — update when ready
+    0,   // Grade  6  — update when ready
+    0,   // Grade  7  — update when ready
+    0,   // Grade  8  — update when ready
+    0,   // Grade  9  — update when ready
+    0,   // Grade 10  — update when ready
+    0,   // Grade 11  — update when ready
+    0,   // Grade 12  — update when ready
+  ];
+  // ──────────────────────────────────────────────────────────────────────────
+
+  const grid = document.getElementById('gradesGrid');
+
+  GRADE_PAGES.forEach((count, idx) => {
+    const grade = idx + 1;
+    const gradeStr = String(grade).padStart(2, '0');
+
+    const block = document.createElement('div');
+    block.className = 'grade-block';
+
+    const title = document.createElement('div');
+    title.className = 'grade-title';
+    title.textContent = `Grade ${grade}`;
+    block.appendChild(title);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'pages-wrap';
+
+    if (count === 0) {
+      const msg = document.createElement('span');
+      msg.className = 'no-pages';
+      msg.textContent = 'Coming soon…';
+      wrap.appendChild(msg);
+    } else {
+      for (let p = 1; p <= count; p++) {
+        const pageStr = String(p).padStart(2, '0');
+        const link = document.createElement('a');
+        link.className = 'page-circle';
+        link.href = `hindi/${gradeStr}-${pageStr}-hindi-textbook-lesson.html`;
+        link.textContent = p;
+        link.title = `Grade ${grade}, Lesson ${p}`;
+        wrap.appendChild(link);
+      }
+    }
+
+    block.appendChild(wrap);
+    grid.appendChild(block);
+  });
+</script>
+</body>
+</html>
